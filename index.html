@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEMETRIC</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <header class="hud">
+        <div>
+          <h1>MEMETRIC</h1>
+          <p class="subtitle">Ритм-платформер по эпохам интернет-культуры</p>
+        </div>
+        <div class="hud-info">
+          <p>Уровень: <span id="levelName">Doge Awakens</span></p>
+          <p>Форма: <span id="playerForm">Куб</span></p>
+          <p>Жизни: <span id="lives">3</span></p>
+          <p>Тренд-режим: <span id="trendStatus">Не активен</span></p>
+        </div>
+      </header>
+
+      <section class="controls">
+        <button id="startBtn">Старт</button>
+        <button id="pauseBtn">Пауза</button>
+        <button id="trendBtn">Активировать тренд недели</button>
+        <p>
+          Управление: <kbd>Space</kbd>/<kbd>W</kbd> — прыжок, <kbd>K</kbd> — "Hawk Tuah" удар,
+          <kbd>T</kbd> — тренд-уровень.
+        </p>
+      </section>
+
+      <canvas id="gameCanvas" width="1100" height="460" aria-label="Игровое поле"></canvas>
+
+      <section class="log-panel">
+        <h2>Вирусный лог</h2>
+        <ul id="eventLog"></ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

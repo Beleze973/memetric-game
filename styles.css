@@ -1,0 +1,107 @@
+:root {
+  --bg: #0f0820;
+  --panel: #190f35;
+  --accent: #ff4bd8;
+  --accent-2: #32f7ff;
+  --text: #f4ebff;
+  --warn: #ffdd57;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at 20% 20%, #2d1359, var(--bg) 45%, #05030d 100%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+  background: rgba(25, 15, 53, 0.8);
+  border: 1px solid rgba(255, 75, 216, 0.35);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0;
+  letter-spacing: 0.08em;
+}
+
+.subtitle {
+  margin-top: 0.3rem;
+  color: #caafff;
+}
+
+.hud-info p {
+  margin: 0.15rem 0;
+}
+
+.controls,
+.log-panel {
+  margin-top: 0.9rem;
+  padding: 0.9rem;
+  background: rgba(25, 15, 53, 0.8);
+  border: 1px solid rgba(50, 247, 255, 0.35);
+  border-radius: 12px;
+}
+
+button {
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent), #9f40ff);
+  color: #fff;
+  padding: 0.55rem 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.08);
+}
+
+kbd {
+  background: #281649;
+  border: 1px solid #5732a6;
+  border-radius: 5px;
+  padding: 0.1rem 0.35rem;
+}
+
+#gameCanvas {
+  width: 100%;
+  margin-top: 0.9rem;
+  border: 2px solid rgba(255, 75, 216, 0.35);
+  border-radius: 12px;
+  background: #05030d;
+  display: block;
+}
+
+.log-panel h2 {
+  margin: 0;
+  color: var(--warn);
+}
+
+#eventLog {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+#eventLog li {
+  margin-bottom: 0.2rem;
+  color: #e5d6ff;
+}
